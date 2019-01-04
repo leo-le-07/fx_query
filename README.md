@@ -1,11 +1,9 @@
 # fx_query
 
-We'll now as free server
+Run in my local server via ngrok
 
-In order to let telegram know that our bot has to talk to our server now's usrl whenever it receives any messages:
+To delete webhook
+`curl -sSL 'https://api.telegram.org/bot689990809:AAFeUxR6wlnbH7YgIlhLeNeoDR0iHILMmlw/deleteWebhook'`
 
-`curl -F "url=<our_server_url>/new-message"  https://api.telegram.org/bot<our_telegram_token>/setWebhook`
-
-Ex:
-
-`curl -F "url=https://nodefxquery-tvtepccvnm.now.sh/new-message"  https://api.telegram.org/bot689990809:AAFeUxR6wlnbH7YgIlhLeNeoDR0iHILMmlw/setWebhook`
+To start webhook
+`curl -F "url=https://3a53d9e5.ngrok.io/start_bot"  https://api.telegram.org/bot689990809:AAFeUxR6wlnbH7YgIlhLeNeoDR0iHILMmlw/setWebhook`
